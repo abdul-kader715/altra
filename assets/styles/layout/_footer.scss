@@ -1,0 +1,334 @@
+/* start of css altra-footer-section */
+.altra-footer-section {
+    position: relative;
+    margin-top: 310px;
+
+    @media (max-width:1199px) {
+        margin-top: 0px;
+    }
+
+    .footer-side-img {
+        position: absolute;
+        right: 0;
+        top: -280px;
+        z-index: -1;
+
+        @media (max-width:1199px) {
+            display: none;
+        }
+
+    }
+}
+
+.footer-wrap {
+    width: 1600px;
+    display: flex;
+    background: #121212;
+
+
+    @media (max-width:1599px) {
+        width: 100%;
+    }
+
+    @media (max-width:1199px) {
+        display: block;
+    }
+
+    .left-content {
+        padding-top: 140px;
+        width: 1195px;
+        padding-left: 150px;
+        position: relative;
+
+        @media (max-width:1199px) {
+            width: 992px;
+            padding-left: 104px;
+            padding-top: 120px;
+        }
+
+        @media (max-width:991px) {
+            width: 100%;
+        }
+
+        @media (max-width:767px) {
+            padding-left: 20px;
+        }
+
+        &::before {
+            position: absolute;
+            left: 100px;
+            top: 0;
+            content: '';
+            width: 1px;
+            height: 100%;
+            background: #2B2B2B;
+
+            @media (max-width:1199px) {
+                display: none;
+            }
+        }
+    }
+
+    .about-widget {
+        padding-bottom: 55px;
+        padding-right: 40px;
+
+        @media (max-width:767px) {
+            padding-right: 20px;
+        }
+
+        .f-logo {
+            width: 88px;
+        }
+
+        p {
+            margin-top: 40px;
+            font-weight: 400;
+            font-size: 16px;
+            color: $text-light-color-s2;
+        }
+
+    }
+
+
+    .f-title {
+        h2 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: $white;
+        }
+    }
+
+    .right-content {
+        background: $cyan;
+
+    }
+}
+
+.social-icon {
+    list-style: none;
+
+    li {
+        float: left;
+        margin-right: 20px;
+        width: 20px;
+        height: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: #999999;
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover {
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.link-widget {
+    padding-left: 100px;
+    padding-bottom: 30px;
+
+    @media (max-width:1199px) {
+        padding-left: 30px;
+    }
+
+    @media (max-width:767px) {
+        padding-left: 0px;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 15px;
+
+        li {
+            display: block;
+            padding-bottom: 12px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $text-light-color-s2;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover {
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+    }
+}
+
+.contact-widget {
+    padding-left: 0;
+    padding-right: 78px;
+
+    ul {
+
+        li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $text-light-color-s2;
+
+            span {
+                color: $white;
+            }
+        }
+    }
+}
+
+.f-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    position: relative;
+    margin-left: -50px;
+    padding-left: 50px;
+
+    @media (max-width:767px) {
+        display: block;
+    }
+
+    &::before {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        content: '';
+        width: 99%;
+        height: 1px;
+        background: #2B2B2B;
+
+        @media (max-width:1199px) {
+            display: none;
+        }
+    }
+
+    .copyright {
+        p {
+            width: 233px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $text-light-color-s2;
+            margin-bottom: 0;
+
+            span {
+                color: $white;
+            }
+        }
+    }
+
+    .email-btn {
+        position: relative;
+        margin-right: 10px;
+
+        @media (max-width:767px) {
+            margin-top: 20px;
+        }
+
+        .form-control {
+            width: 450px;
+            height: 55px;
+            color: #999999;
+            padding: 6px 20px;
+            border: none;
+            box-shadow: none;
+            background: transparent;
+
+            @media (max-width:767px) {
+                width: 100%;
+            }
+        }
+
+        .submit {
+            position: absolute;
+            right: 20px;
+            top: 55%;
+            transform: translateY(-50%);
+
+            button {
+                background: transparent;
+                border: 0;
+                outline: 0;
+                color: #e0af14;
+                margin-top: -2px;
+                position: relative;
+                right: -5px;
+            }
+        }
+
+    }
+}
+
+
+.right-contact {
+    width: 410px;
+    text-align: center;
+    display: inline-block;
+    padding: 130px 0;
+    z-index: 1;
+    margin-left: -1px;
+
+    @media (max-width:1199px) {
+        padding: 0;
+        margin-left: 104px;
+    }
+
+    @media (max-width:767px) {
+        margin-left: 0;
+    }
+
+    @media (max-width:575px) {
+        width: 100%;
+
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 40px;
+    }
+
+    .theme-btn {
+        border: 1px solid #2C2C2C;
+    }
+
+    h3 {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-light-color-s2;
+
+    }
+}

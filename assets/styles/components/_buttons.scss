@@ -1,0 +1,63 @@
+.theme-btn {
+    text-align: center;
+    text-decoration: none;
+    color: $text-light-color;
+    position: relative;
+    overflow: hidden;
+    width: 170px;
+    height: 170px;
+    max-width: 250px;
+    text-transform: capitalize;
+    border: 1px solid $border-color;
+    border-radius: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    span {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 100%;
+        background-color: $theme-primary-color-s2;
+        -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &::before {
+        position: absolute;
+        content: "\e65a";
+        right: 14px;
+        top: 50%;
+        font-size: 16px;
+        font-family: themify;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+        color: #fff;
+        border: 1px solid transparent;
+
+        span {
+            width: 500%;
+            height: 500%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &:active {
+        background-color: $theme-primary-color-s2;
+    }
+}

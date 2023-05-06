@@ -1,0 +1,33 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+// fonts
+$base-font-size: 15px;
+$base-font: 'Kanit', sans-serif;
+$heading-font: 'Kanit', sans-serif;
+
+// color
+$base-color: #121212;
+$body-color: #f1efef;
+$white: #ffffff;
+$small-white: #F0F0F0;//
+$light: #e2dfdc;
+$black: #000;//
+$small-black: #999999;//
+$cyan: #1D1D1D;//
+
+$theme-primary-color: #e0af14;
+$theme-primary-color-s2: #C9F31D;//
+$body-bg-color: #fff;
+$section-bg-color: #cdebf2;
+$text-color: #121212;//
+$text-light-color: #555555;//
+$text-light-color-s2: #999999;//
+$heading-color: $base-color;
+$border-color: #C2C2C2;//
+$border-color-s2: #2B2B2B;//
+
+

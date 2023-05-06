@@ -1,0 +1,1463 @@
+/* start of css altra-roll-section */
+.altra-roll-section {
+    background: $theme-primary-color-s2;
+}
+
+.roll-grids {
+    padding: 25px 0;
+
+    .grid h2 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 0;
+        @media (max-width:1830px) {
+            font-size: 20px;
+        }
+        @media (max-width:1670px) {
+            font-size: 19px;
+        }
+    }
+    .owl-nav.disabled {
+        display: none;
+    }
+}
+
+/* start of css altra-about-section */
+.altra-about-section {
+    padding: 140px 0;
+
+    @media (max-width:1199px) {
+        padding: 120px 0;
+    }
+
+    @media (max-width:991px) {
+        padding: 90px 0;
+    }
+
+    @media (max-width:767px) {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        text-align: left;
+        margin-left: -36px;
+
+        @media (max-width:767px) {
+            margin-left: 0;
+        }
+
+        h2 {
+            text-transform: none;
+
+            @media (max-width:1199px) {
+                font-size: 50px;
+                line-height: 59px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 45px;
+                line-height: 60px;
+            }
+
+            @media (max-width:575px) {
+                font-size: 30px;
+                line-height: 41px;
+            }
+        }
+    }
+
+}
+
+.about-wrap {
+    position: relative;
+
+    .about-right-image {
+        position: absolute;
+        right: 0;
+        top: 210px;
+        width: 220px;
+        height: 250px;
+
+        @media (max-width:991px) {
+            display: none;
+        }
+
+    }
+
+    .shape {
+        position: absolute;
+        right: 25%;
+        bottom: 10%;
+        transform: translate(-50%, -50%);
+        animation: zoomIn 3s infinite;
+
+        @media (max-width:991px) {
+            right: 19%;
+            bottom: 15%;
+        }
+
+        @media (max-width:767px) {
+            right: 24%;
+            bottom: 7%;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 56px;
+            width: 53px;
+            background: $text-color;
+            z-index: -1;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            height: 56px;
+            width: 53px;
+            top: 17px;
+            left: 25px;
+            background: $theme-primary-color-s2;
+            z-index: 1;
+        }
+    }
+}
+
+
+.about-content {
+    .about-image {
+        margin-right: 80px;
+
+        @media (max-width:991px) {
+            margin-right: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .about-text {
+        margin-left: -33px;
+        margin-top: 60px;
+
+        @media (max-width:991px) {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        @media (max-width:767px) {
+            margin-top: 30px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $text-light-color;
+        }
+
+        .theme-btn {
+            margin-top: 60px;
+            margin-left: 0;
+
+            @media (max-width:991px) {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/* start of css altra-service-section */
+.altra-service-section {
+    position: relative;
+    background: $base-color;
+    padding: 150px 0;
+    z-index: 1;
+
+    @media (max-width:991px) {
+        padding: 120px 0;
+    }
+
+    @media (max-width:767px) {
+        padding: 90px 0;
+    }
+}
+
+.service-wrap {
+
+    .title-text {
+        text-align: left;
+
+        @media (max-width:991px) {
+            text-align: center;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $white;
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 66px;
+            color: $white;
+
+            @media (max-width:575px) {
+                font-size: 30px;
+                line-height: 41px
+            }
+        }
+    }
+
+    .text {
+        max-width: 505px;
+
+        @media (max-width:991px) {
+            text-align: center;
+            margin: 20px auto;
+
+        }
+
+        p {
+            font-family: $base-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #A8A8A8;
+
+            span {
+                font-family: $base-font;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: $white;
+            }
+        }
+    }
+
+    .service-btn {
+        .theme-btn {
+            border: 1px solid #2C2C2C;
+
+            @media (max-width:1199px) {
+                width: 145px;
+                height: 145px;
+            }
+
+            @media (max-width:991px) {
+                width: 170px;
+                height: 170px;
+            }
+
+
+            &::before {
+                color: $white;
+            }
+        }
+    }
+
+}
+
+.service-content {
+    margin-top: 80px;
+
+    @media (max-width:767px) {
+        margin-top: 40px;
+    }
+
+    .images {
+        position: relative;
+
+        @media (max-width:991px) {
+            display: none;
+        }
+
+        img {
+            width: 378px;
+            height: 478px;
+            transform: rotate(13deg);
+
+            @media (max-width:1399px) {
+                width: 280px;
+                height: 455px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            left: 10%;
+            bottom: 0;
+            content: '';
+            width: 174px;
+            height: 70px;
+            background: $theme-primary-color-s2;
+            transform: rotate(-26.05deg);
+            z-index: 1;
+        }
+    }
+
+    .service-card {
+        list-style: none;
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: auto;
+            padding: 40px 0 30px;
+            margin-left: 20px;
+            border-top: 1px solid #2C2C2C;
+
+            @media (max-width:1199px) {
+                padding: 30px 0 30px;
+                margin-left: 0px;
+            }
+
+            @media (max-width:767px) {
+                display: block;
+                padding: 20px 0;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 36px;
+                color: #FFFFFF;
+
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 36px;
+                color: #FFFFFF;
+                width: 180px;
+
+                @media (max-width:767px) {
+                    width: auto;
+                    margin: 20px 0;
+                }
+
+                @media (max-width:399px) {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #999999;
+                width: 320px;
+
+                @media (max-width:767px) {
+                    margin-bottom: 20px;
+                }
+
+                @media (max-width:575px) {
+                    width: 100%;
+                }
+            }
+
+            a {
+                width: 40px;
+                transition: all .3s ease-in-out;
+                color: $text-light-color;
+
+                i {
+                    font-size: 40px;
+                }
+            }
+
+            &:hover {
+                a {
+                    color: $white;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 1px solid #2C2C2C;
+            }
+        }
+
+    }
+
+}
+
+
+
+/* start of css altra-fun-fact-section */
+.altra-fun-fact-section {
+    padding: 150px 0;
+
+    @media (max-width:991px) {
+        padding: 120px 0;
+        padding-bottom: 90px;
+    }
+
+    @media (max-width:767px) {
+        padding: 90px 0;
+        padding-bottom: 60px;
+    }
+
+
+}
+
+.fun-fact-wrap {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:991px) {
+        flex-wrap: wrap;
+    }
+
+    .single-item {
+        height: 380px;
+        width: 380px;
+        border: 1px solid #EFEFEF;
+        border-radius: 100%;
+        position: relative;
+        margin: 0 -30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+
+        @media (max-width:1399px) {
+            height: 350px;
+        }
+
+        @media (max-width:1199px) {
+            height: 300px;
+            width: 290px;
+        }
+
+        @media (max-width:991px) {
+            margin-bottom: 30px;
+        }
+
+
+
+        .info {
+            text-align: center;
+            width: 175px;
+
+            h3,
+            span {
+                font-weight: 300;
+                font-size: 100px;
+                line-height: 96px;
+                color: $text-color;
+
+                @media (max-width:1199px) {
+                    font-size: 80px;
+                    line-height: 74px;
+                }
+
+                @media (max-width:767px) {
+                    font-size: 70px;
+                    line-height: 64px;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                color: $text-light-color;
+                padding: 0 10px;
+                text-align: center;
+            }
+        }
+
+        .shape-2 {
+            position: absolute;
+            bottom: -8%;
+            left: 70%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-in-out;
+
+            @media (max-width:1399px) {
+                bottom: -7%;
+                left: 66%;
+            }
+
+            @media (max-width:1199px) {
+                bottom: -7%;
+                left: 49%;
+                width: 60%;
+            }
+
+            img {
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        .shape {}
+
+        &:hover {
+
+            .shape-2 {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+}
+
+/* start of css altra-work-section */
+.altra-work-section {
+    padding-bottom: 130px;
+
+    @media (max-width:991px) {
+        padding-bottom: 90px;
+    }
+
+    @media (max-width:991px) {
+        padding-bottom: 60px;
+    }
+}
+
+
+.work-card {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media (max-width:991px) {
+        margin-bottom: 30px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 75px;
+        top: 20%;
+        width: 150px;
+        height: 1px;
+        background: $text-color;
+        transform: translate(-50%, -50%);
+
+        @media (max-width:1399px) {
+            left: 68px;
+            width: 120px;
+        }
+
+        @media (max-width:1199px) {
+            left: 54px;
+            width: 105px;
+        }
+
+        @media (max-width:991px) {
+            left: 85px;
+            width: 140px;
+        }
+
+        @media (max-width:767px) {
+            left: 60px;
+            width: 120px;
+        }
+
+        @media (max-width:575px) {
+            left: 50%;
+            width: 100%;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        right: -75px;
+        top: 20%;
+        width: 150px;
+        height: 1px;
+        background: $text-color;
+        transform: translate(-50%, -50%);
+
+        @media (max-width:1399px) {
+            width: 134px;
+        }
+
+        @media (max-width:1199px) {
+            width: 107px;
+            right: -54px;
+        }
+
+        @media (max-width:991px) {
+            width: 167px;
+            right: -98px;
+        }
+
+        @media (max-width:767px) {
+            width: 119px;
+            right: -59px;
+        }
+
+        @media (max-width:575px) {
+            display: none;
+        }
+    }
+
+    .line-border {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        width: 13px;
+        height: 13px;
+        background: #C9F31D;
+        border-radius: 50%;
+    }
+
+    .text {
+        span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $text-color;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 97px;
+            color: #F7F7F7;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 34px;
+            transition: all .3s ease-in-out;
+            margin-bottom: 5px;
+
+            a {
+                transition: all .3s ease-in-out;
+                color: $text-color;
+            }
+
+            &:hover {
+                a {
+                    color: #999999;
+                }
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $text-light-color;
+            padding: 0 30px;
+
+            @media (max-width:1199px) {
+                padding: 0;
+            }
+
+            @media (max-width:991px) {
+                padding: 0 30px;
+            }
+
+            @media (max-width:767px) {
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* start of css altra-project-section */
+.altra-project-section {
+    background: $text-color;
+    position: relative;
+    padding: 150px 0;
+    z-index: 1;
+
+    @media (max-width:991px) {
+        padding: 120px 0;
+    }
+
+    @media (max-width:991px) {
+        padding: 90px 0;
+    }
+
+    .project-content {
+        cursor: pointer;
+        margin-bottom: 150px;
+        position: relative;
+
+        @media (max-width:991px) {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width:991px) {
+            max-width: 400px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            .mouseFollow {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .theme-btn {
+        color: #999999;
+        padding: 0 30px;
+
+        &::before {
+            color: $white;
+            right: 25px;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .project-title {
+        position: absolute;
+        width: 1644px;
+        height: 333px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        @media (max-width:1650px) {
+            left: 40%;
+            width: 72%;
+        }
+
+        @media (max-width:1500px) {
+            left: 24%;
+            width: 42%;
+        }
+
+        @media (max-width:1399px) {
+            left: 63%;
+            top: 38%;
+            width: 45%;
+        }
+
+        @media (max-width:1199px) {
+            left: 53%;
+            width: 30%;
+        }
+
+        @media (max-width:991px) {
+            display: none;
+        }
+
+        h1 {
+            font-size: 560px;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 0;
+
+            @media (max-width:1710px) {
+                font-size: 500px;
+            }
+
+            @media (max-width:1650px) {
+                font-size: 470px;
+            }
+
+            @media (max-width:1399px) {
+                font-size: 250px;
+            }
+
+            @media (max-width:1199px) {
+                font-size: 200px;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+.mouseFollow {
+    position: fixed;
+    right: 0;
+    width: 174px;
+    pointer-events: none;
+    background: #C9F31D;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+
+    h2 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #121212;
+        margin-bottom: 0;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #121212;
+    }
+}
+
+/* start of css altra-brand-section */
+.altra-brand-section {
+    padding-top: 70px;
+    position: relative;
+    overflow: hidden;
+
+    .right-shape {
+        position: absolute;
+        right: -14%;
+        top: 0;
+        z-index: -1;
+        width: 407px;
+        transform: translate(-50%, -50%);
+
+        @media (max-width:1399px) {
+            right: -19%;
+        }
+
+        @media (max-width:1199px) {
+            right: -19%;
+            width: 300px;
+        }
+
+        @media (max-width:767px) {
+            right: -11%;
+            width: 150px;
+        }
+
+        @media (max-width:575px) {
+            right: -20%;
+            width: 150px;
+        }
+
+        @media (max-width:399px) {
+            right: -25%;
+            width: 150px;
+        }
+
+        svg {
+            fill: #F9F9F9;
+        }
+    }
+
+    .section-title {
+        text-align: left;
+
+
+
+        h2 {
+            font-size: 59px;
+            line-height: 74px;
+            text-transform: none;
+
+            @media (max-width:767px) {
+                font-size: 39px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+.brand-wrap {
+    .col {
+        border-top: 1px solid #E9E9E9;
+        border-left: 1px solid #E9E9E9;
+
+        &:nth-child(2) {
+
+            @media (max-width:575px) {
+                border-right: 1px solid #E9E9E9;
+            }
+        }
+
+        &:nth-child(3) {
+
+            @media (max-width:767px) {
+                border-right: 1px solid #E9E9E9;
+            }
+
+            @media (max-width:575px) {
+                border-right: 0px;
+            }
+        }
+
+        &:nth-child(4) {
+            @media (max-width:992px) {
+                border-right: 1px solid #E9E9E9;
+            }
+
+            @media (max-width:767px) {
+                border-right: 0px;
+            }
+
+            @media (max-width:575px) {
+                border-right: 1px solid #E9E9E9;
+            }
+        }
+
+        &:nth-child(6) {
+            border-right: 1px solid #E9E9E9;
+
+            @media (max-width:991px) {
+                border-right: 0px;
+            }
+
+            @media (max-width:767px) {
+                border-right: 1px solid #E9E9E9;
+            }
+        }
+
+        &:nth-child(7) {
+            border-bottom: 1px solid #E9E9E9;
+
+            @media (max-width:991px) {
+                border-bottom: 0px;
+            }
+        }
+
+        &:nth-child(8) {
+            border-bottom: 1px solid #E9E9E9;
+
+            @media (max-width:991px) {
+                border-right: 1px solid #E9E9E9;
+                border-bottom: 0px;
+            }
+
+            @media (max-width:767px) {
+                border-right: 0px;
+            }
+
+            @media (max-width:575px) {
+                border-right: 1px solid #E9E9E9;
+            }
+        }
+
+        &:nth-child(9) {
+            border-bottom: 1px solid #E9E9E9;
+
+            @media (max-width:767px) {
+                border-bottom: 0px;
+                border-right: 1px solid #E9E9E9;
+            }
+
+            @media (max-width:575px) {
+                border-right: 0px;
+            }
+        }
+
+        &:nth-child(10) {
+            border-bottom: 1px solid #E9E9E9;
+
+            @media (max-width:575px) {
+                border-right: 1px solid #E9E9E9;
+                border-bottom: 0px;
+            }
+        }
+
+        &:nth-child(11) {
+            border-bottom: 1px solid #E9E9E9;
+        }
+
+        &:nth-child(12) {
+            border-bottom: 1px solid #E9E9E9;
+            border-right: 1px solid #E9E9E9;
+        }
+    }
+
+    .brand-item {
+        .image {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+}
+
+/* start of css altra-testimonial-section */
+.altra-testimonial-section {
+    padding-top: 124px;
+    padding-bottom: 120px;
+
+    @media (max-width:991px) {
+        padding: 100px 0;
+    }
+
+    @media (max-width:767px) {
+        padding: 90px 0;
+        padding-bottom: 0px;
+    }
+
+}
+
+.testimonial-wrap {
+    position: relative;
+    height: 864px;
+
+    @media (max-width:991px) {
+        height: 970px;
+    }
+
+    @media (max-width:767px) {
+        height: auto;
+    }
+
+    .testimonial-text {
+        height: 274px;
+        width: 328px;
+        position: absolute;
+        top: 15%;
+        left: 55%;
+        transform: translateX(-50%);
+
+        @media (max-width:991px) {
+            position: unset;
+            transform: none;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width:767px) {
+            margin-bottom: 0px;
+        }
+
+        .section-title {
+            text-align: left;
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: $text-light-color;
+            }
+        }
+    }
+
+    .testimonial-card {
+        display: inline-block;
+
+        @media (max-width:767px) {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            height: 430px;
+            width: 330px;
+            position: relative;
+            display: inline;
+
+            @media (max-width:1199px) {
+                display: inline-block;
+                height: 400px;
+                width: 300px;
+            }
+
+            @media (max-width:991px) {
+                width: 240px;
+                height: 320px;
+            }
+
+
+            img {
+                border-radius: 165px 165px 0px 0px;
+            }
+
+            &::before {
+                position: absolute;
+                right: -30px;
+                top: -200px;
+                content: "";
+                width: 360px;
+                height: 400px;
+                border: 1px solid #D7D7D7;
+                border-radius: 180px 180px 0px 0px;
+                z-index: -1;
+
+                @media (max-width:1199px) {
+                    right: -23px;
+                    top: 0;
+                    width: 320px;
+                    height: 370px;
+                }
+
+                @media (max-width:991px) {
+                    width: 265px;
+                    height: 300px;
+                }
+            }
+
+            a {
+                padding: 32px 27px;
+                background: $base-color;
+                border-radius: 100px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                text-align: center;
+                color: $white;
+                cursor: pointer;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background: $theme-primary-color-s2;
+                }
+            }
+        }
+
+        &:hover {
+            .image {
+                a {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 15px;
+
+            h2 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: $black;
+                margin-bottom: 0;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $text-light-color;
+            }
+        }
+
+        &.s2 {
+            position: absolute;
+            left: 25%;
+            top: 60%;
+
+            @media (max-width:991px) {
+                left: 30%;
+                top: 75%;
+            }
+
+            @media (max-width:767px) {
+                position: unset;
+            }
+
+            .image {
+                width: 250px;
+                height: 366px;
+
+                @media (max-width:1199px) {
+                    height: 300px;
+                }
+
+                img {
+                    border-radius: 110px 110px 0px 0px;
+                }
+
+                &::before {
+                    right: 0px;
+                    top: -135px;
+                    width: 250px;
+                    height: 270px;
+                    border-radius: 125px 125px 0px 0px;
+
+                    @media (max-width:1199px) {
+                        top: 0;
+                    }
+
+                    @media (max-width:991px) {
+                        right: 10px;
+                        width: 240px;
+                    }
+                }
+
+                a {
+                    padding: 25px 20px;
+
+                    &:hover {
+                        background: $theme-primary-color-s2;
+                    }
+                }
+
+            }
+        }
+
+        &.s3 {
+            position: absolute;
+            right: 0;
+            top: 30%;
+
+            @media (max-width:991px) {
+                top: 34%;
+            }
+
+            @media (max-width:767px) {
+                position: unset;
+            }
+
+            .image {
+                width: 260px;
+                height: 360px;
+
+                @media (max-width:1199px) {
+                    width: 240px;
+                    height: 337px;
+                }
+
+                img {
+                    border-radius: 130px 130px 0px 0px;
+                }
+
+                &::before {
+                    right: 0px;
+                    top: -163px;
+                    width: 290px;
+                    height: 330px;
+                    border-radius: 145px 145px 0px 0px;
+
+                    @media (max-width:1199px) {
+                        top: 0;
+                        width: 265px;
+                        height: 323px;
+                    }
+                }
+
+                a {
+                    padding: 25px 20px;
+
+                    &:hover {
+                        background: $theme-primary-color-s2;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+}
+
+/*start of css altra-blog-section */
+.altra-blog-section {
+    padding: 70px 0 40px;
+}
+
+.blog-card {
+    margin-bottom: 30px;
+
+    .images {
+        img {
+            width: 100%;
+        }
+    }
+
+    .blog-content {
+        margin-top: 25px;
+
+        span {
+            font-family: $base-font;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: $text-light-color;
+        }
+
+        h2 {
+            transition: all .3s ease-in-out;
+            margin-bottom: 12px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #BBBBBB;
+            font-family: $heading-font;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 32px;
+
+            @media (max-width:1199px) {
+                font-size: 22px;
+            }
+
+            a {
+                color: $text-color;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover {
+                a {
+                    color: $small-black;
+                }
+            }
+        }
+
+        .blog-btn {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #555555;
+            transition: all .3s ease-in-out;
+
+            i {
+                padding-left: 5px;
+                transform: rotate(45deg);
+                transition: all .3s ease-in-out;
+                font-size: 15px;
+            }
+
+            &:hover {
+                color: $small-black;
+
+                i {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+/* start of css altra-cta-section */
+.altra-cta-section {
+    text-align: center;
+    padding: 70px 0;
+
+    .cta-wrap {
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: $text-light-color;
+            border: 1px solid $border-color;
+            border-radius: 50px;
+            padding: 5px 17px;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 50px;
+            color: $heading-color;
+            margin-top: 15px;
+            margin-bottom: 40px;
+
+            @media (max-width:1399px) {
+                font-size: 44px;
+            }
+
+            @media (max-width:1199px) {
+                font-size: 37px;
+                line-height: 45px;
+            }
+
+            @media (max-width:575px) {
+                font-size: 30px;
+                line-height: 35px;
+                max-width: 400px;
+                margin: 0 auto;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+
+            @media (max-width:399px) {
+                font-size: 25px;
+                line-height: 35px;
+                max-width: 320px;
+                margin: 0 auto;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.line-shape{
+    position: relative;
+    z-index: 11;
+}
+.line-1{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background:  #F0F0F0;
+    z-index: -1;
+    @media (max-width:991px) {
+        display: none;
+    }
+}
+.line-2{
+    position: absolute;
+    content: "";
+    left: 16%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background:  #F0F0F0;
+    z-index: -1;
+    transform: translateX(-50%);
+    @media (max-width:1400px) {
+        display: none;
+    }
+}
+.line-3{
+    position: absolute;
+    content: "";
+    left: 84%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background:  #F0F0F0;
+    z-index: -1;
+    transform: translateX(-50%);
+    @media (max-width:1400px) {
+        display: none;
+    }
+}
